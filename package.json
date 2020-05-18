@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --coverage",
+    "prettier": "prettier --write ./bst/*.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "test": "^0.6.0"
+    "jest": "^26.0.1"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
   }
 }
