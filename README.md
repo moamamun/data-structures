@@ -4,6 +4,5 @@ Hi! I'm using **Jest** to unit test different data Structures! **Jest**  is a de
 
 
 ## Binary Search Tree 
-<img  src="public/images/btscoverage.jpg"  width='400'><br>
-
-Image of the test **offline!**
+<img  src="public/images/btscoverage.JPG"  width='450'><br>
+screenshot of **Code Coverage!**
