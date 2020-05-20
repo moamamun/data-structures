@@ -25,7 +25,7 @@ test("BTS should return null for already existed nodes", () => {
   tree.add(17)
   expect(tree.add(17)).toEqual(null)
 })
- 
+
 test("BTS contains data and returns node", () => {
   const tree = new BST()
   tree.add(5)
@@ -36,7 +36,7 @@ test("BTS contains data and returns node", () => {
   const five = tree.root
   const two = tree.root.left
   const twelve = tree.root.right
-  //return root 
+  //return root
   expect(tree.find(5)).toEqual(five)
   //
   expect(tree.find(2)).toEqual(two)
@@ -44,7 +44,6 @@ test("BTS contains data and returns node", () => {
   expect(tree.find(12)).toEqual(null)
   expect(tree.find(12)).toEqual(null)
 })
-
 
 test("Does not contain data return null", () => {
   const tree = new BST()
@@ -62,11 +61,14 @@ test("Remove existing Node and data", () => {
   tree.add(15)
   tree.add(10)
   tree.add(17)
+  tree.add(7)
+  tree.add(20)
 
   tree.remove(15)
   tree.remove(5)
+
   expect(tree.root.right.data).toEqual(17)
-  expect(tree.root.data).toEqual(10)
+  expect(tree.root.data).toEqual(7)
 })
 
 test("Find smallest data in tree", () => {
@@ -93,4 +95,40 @@ test("Find biggest data in tree", () => {
 
   const biggest = tree.findMax()
   expect(biggest).toEqual(17)
+})
+
+test("BTS return greatest hieght", () => {
+  const tree = new BST()
+  tree.add(5)
+  tree.add(0)
+  tree.add(3)
+  tree.add(15)
+  tree.add(10)
+  tree.add(17)
+  const max = tree.maxHeight()
+  expect(max).toEqual(2)
+})
+
+test("BTS return minimum hieght", () => {
+  const tree = new BST()
+  tree.add(5)
+  tree.add(0)
+  tree.add(3)
+  tree.add(15)
+  tree.add(10)
+  tree.add(17)
+  const min = tree.minHeight()
+  expect(min).toEqual(1)
+})
+
+test("BTS balanced", () => {
+  const tree = new BST()
+  tree.add(5)
+  tree.add(0)
+  tree.add(3)
+  tree.add(15)
+  tree.add(10)
+  tree.add(17)
+  const isBalanced = tree.isBalanced()
+  expect(isBalanced).toEqual(true)
 })

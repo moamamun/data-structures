@@ -40,7 +40,7 @@ class BST {
   }
   findMin() {
     let node = this.root
-    while(node.left) {
+    while (node.left) {
       node = node.left
     }
     return node.data
@@ -48,7 +48,7 @@ class BST {
 
   findMax() {
     let node = this.root
-    while(node.right) {
+    while (node.right) {
       node = node.right
     }
     return node.data
@@ -72,6 +72,26 @@ class BST {
     return current
   }
 
+  isBalanced() {
+    return (this.minHeight() >= this.maxHeight() - 1)
+  }
+
+  maxHeight(node = this.root) {
+    if (node === null) return -1
+    let left = this.maxHeight(node.left)
+    let right = this.maxHeight(node.right)
+    if (left > right) return left + 1
+    else return right + 1
+  }
+
+  minHeight(node = this.root) {
+    if (node === null) return -1
+    let left = this.minHeight(node.left)
+    let right = this.minHeight(node.right)
+    if (left < right) return left + 1
+    else return right + 1
+  }
+
   remove(data) {
     const removeNode = (node, data) => {
       if (node === null) return null
@@ -81,7 +101,7 @@ class BST {
         // node has no right child
         if (node.right === null) return node.left
         // node has no left child
-        if (node.left === null) return node.right 
+        if (node.left === null) return node.right
         // node has two children
         let tempNode = node.right
         while (tempNode.left !== null) {
@@ -103,8 +123,6 @@ class BST {
     this.root = removeNode(this.root, data)
   }
 }
-
-
 
 module.exports = Node
 module.exports = BST
