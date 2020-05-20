@@ -38,9 +38,24 @@ class BST {
       return searchTree(node)
     }
   }
+  findMin() {
+    let node = this.root
+    while(node.left) {
+      node = node.left
+    }
+    return node.data
+  }
+
+  findMax() {
+    let node = this.root
+    while(node.right) {
+      node = node.right
+    }
+    return node.data
+  }
 
   find(data) {
-    if (data === this.root) {
+    if (data === this.root.data) {
       return this.root
     }
     let current = this.root
@@ -66,7 +81,7 @@ class BST {
         // node has no right child
         if (node.right === null) return node.left
         // node has no left child
-        if (node.left === null) return node.right
+        if (node.left === null) return node.right 
         // node has two children
         let tempNode = node.right
         while (tempNode.left !== null) {
@@ -88,6 +103,8 @@ class BST {
     this.root = removeNode(this.root, data)
   }
 }
+
+
 
 module.exports = Node
 module.exports = BST
