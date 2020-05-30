@@ -3,11 +3,8 @@ class MaxBinaryHeap {
         this.values = []
     }
     add(data) {
-        if(this.values.length === 0) this.values.push(data)
-        else if(this.values.length > 0) {
-            this.values.push(data)
-            this.bubbleUp()
-        }
+        this.values.push(data)
+        this.bubbleUp()
     }
     bubbleUp() {
         let index = this.values.length - 1

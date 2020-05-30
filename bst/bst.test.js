@@ -174,6 +174,6 @@ test(("BTS Postorder Traversal"), () => {
   tree.add(15)
   tree.add(10)
   tree.add(17)
-  const Postorder = tree. Postorder()
+  const Postorder = tree.Postorder()
   expect(Postorder).toEqual([3,0,10,17,15,5])
 })
