@@ -10,6 +10,37 @@ test("Add Max Heap correctly", () => {
     expect(heap).toEqual({values: [ 4, 3, 2, 1 ]})
 })
 
+test("Return largest element (root)", () => {
+    const heap = new MaxBinaryHeap() 
+    heap.add(2)
+    heap.add(1)
+    heap.add(3)
+    heap.add(4)
+    const max = heap.getMax()
+    expect(max).toEqual(4)
+})
+
+test("Removes maximum element from MaxHeap", () => {
+    const heap = new MaxBinaryHeap() 
+    heap.add(2)
+    heap.add(1)
+    heap.add(3)
+    heap.add(4)
+    const max = heap.extractMax()
+    expect(max).toEqual(4)
+})
+
+//touch uncovered line 42-44
+test("Removes maximum element from MaxHeap", () => {
+    const heap = new MaxBinaryHeap() 
+    heap.add(4)
+    heap.add(1)
+    heap.add(3)
+    heap.add(2)
+    const max = heap.extractMax()
+    expect(max).toEqual(4)
+})
+
 /*
  Min Binary Heap Test
 */

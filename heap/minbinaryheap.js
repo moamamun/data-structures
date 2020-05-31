@@ -55,13 +55,5 @@ class MinBinaryHeap {
     }
 }
 
-const heap = new MinBinaryHeap() 
-heap.add(2)
-heap.add(1)
-heap.add(3)
-heap.add(4)
-console.log(heap)
-heap.extractMin()
-console.log(heap)
 
 module.exports = MinBinaryHeap
