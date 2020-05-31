@@ -8,3 +8,7 @@ Hi! I'm using **Jest** to unit test different data Structures! **Jest**  is a de
 
 screenshot of **Code Coverage!**
 
+## MinBinaryHeap and MaxBinaryHeap 
+<img  src="public/images/heapcoverage.JPG"  width='400'><br>
+
+screenshot of **Code Coverage!**
