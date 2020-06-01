@@ -140,20 +140,18 @@ class BST {
 
   Preorder() {
     let result = []
-        
-    const traverse = node => {
 
-        result.push(node.data)
+    const traverse = (node) => {
+      result.push(node.data)
 
-        if (node.left) traverse(node.left)
-    
-        if(node.right) traverse(node.right)
+      if (node.left) traverse(node.left)
 
+      if (node.right) traverse(node.right)
     }
 
     traverse(this.root)
-    return result 
-}
+    return result
+  }
 
   Postorder() {
     let result = []

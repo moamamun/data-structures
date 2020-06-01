@@ -11,7 +11,7 @@ test("BTS can insert correctly", () => {
   tree.add(15)
   tree.add(15)
   tree.add(7)
-  tree.add(4) 
+  tree.add(4)
   tree.add(0)
   tree.add(17)
 
@@ -77,7 +77,6 @@ test("Remove existing Node and data", () => {
   expect(tree.root.right.right.right).toEqual(null)
   expect(tree.root.left.data).toEqual(3)
   expect(tree.root.right.left.data).toEqual(7)
-
 })
 
 test("Find smallest data in tree", () => {
@@ -142,7 +141,7 @@ test("BTS balanced", () => {
   expect(isBalanced).toEqual(true)
 })
 
-test(("BTS Inorder Traversal"), () => {
+test("BTS Inorder Traversal", () => {
   const tree = new BST()
   tree.add(5)
   tree.add(0)
@@ -151,10 +150,10 @@ test(("BTS Inorder Traversal"), () => {
   tree.add(10)
   tree.add(17)
   const Inorder = tree.Inorder()
-  expect(Inorder).toEqual([0,3,5,10,15,17])
+  expect(Inorder).toEqual([0, 3, 5, 10, 15, 17])
 })
 
-test(("BTS Preorder Traversal"), () => {
+test("BTS Preorder Traversal", () => {
   const tree = new BST()
   tree.add(5)
   tree.add(0)
@@ -163,10 +162,10 @@ test(("BTS Preorder Traversal"), () => {
   tree.add(10)
   tree.add(17)
   const Preorder = tree.Preorder()
-  expect(Preorder).toEqual([5,0,3,15,10,17])
+  expect(Preorder).toEqual([5, 0, 3, 15, 10, 17])
 })
 
-test(("BTS Postorder Traversal"), () => {
+test("BTS Postorder Traversal", () => {
   const tree = new BST()
   tree.add(5)
   tree.add(0)
@@ -175,5 +174,5 @@ test(("BTS Postorder Traversal"), () => {
   tree.add(10)
   tree.add(17)
   const Postorder = tree.Postorder()
-  expect(Postorder).toEqual([3,0,10,17,15,5])
+  expect(Postorder).toEqual([3, 0, 10, 17, 15, 5])
 })
