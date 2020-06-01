@@ -12,3 +12,8 @@ screenshot of **Code Coverage!**
 <img  src="public/images/heapcoverage.JPG"  width='400'><br>
 
 screenshot of **Code Coverage!**
+
+## HashTable 
+<img  src="public/images/hashcoverage.JPG"  width='400'><br>
+
+screenshot of **Code Coverage!**
