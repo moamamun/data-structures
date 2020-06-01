@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --watch",
-    "prettier": "prettier --write ./bst/*.js"
+    "test": "jest --coverage --watch hash/hash.test.js",
+    "prettier": "prettier --write ./*/*.js"
   },
   "keywords": [],
   "author": "",
