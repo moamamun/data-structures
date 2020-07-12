@@ -19,5 +19,12 @@ class Stack {
         return this.storage[this.size]
     }
 }
+const stack = new Stack()
+stack.push("dog")
+stack.push("cat")
+stack.push("mouse")
+
+const pop = stack
+console.log(pop)
 
 module.exports = Stack
