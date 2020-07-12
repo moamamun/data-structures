@@ -9,10 +9,17 @@ class Queue {
         this.storage[this.tail] = element
         this.tail++
     }
+
+    dequeue() {
+        let removed = this.storage[this.head]
+        delete this.storage[this.head] 
+        this.head++
+        return removed
+    }
 }
 
 const queue = new Queue() 
 queue.enqueue("hi lol")
 queue.enqueue("hey lol")
-
+queue.dequeue()
 console.log(queue)
