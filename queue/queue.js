@@ -18,8 +18,4 @@ class Queue {
     }
 }
 
-const queue = new Queue() 
-queue.enqueue("hi lol")
-queue.enqueue("hey lol")
-queue.dequeue()
-console.log(queue)
+module.exports = Queue
