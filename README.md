@@ -17,3 +17,8 @@ screenshot of **Code Coverage!**
 <img  src="public/images/hashcoverage.JPG"  width='400'><br>
 
 screenshot of **Code Coverage!**
+
+## Stack 
+<img  src="public/images/stackcoverage.JPG"  width='400'><br>
+
+screenshot of **Code Coverage!**
