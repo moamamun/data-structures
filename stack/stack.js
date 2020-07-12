@@ -20,11 +20,4 @@ class Stack {
     }
 }
 
-const stack = new Stack();
-
-stack.push("dog")
-stack.push("cat")
-stack.push("mouse")
-
-console.log(stack.pop())
-console.log(stack)
+module.exports = Stack
